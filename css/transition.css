@@ -1,0 +1,44 @@
+/* values 2k vitara tiyana propeties walata transition apply karanna ba(display: "block or non").  values loku rang ekaka tiyenna ona*/
+
+/* Basic style */
+body{
+    background-color: #333;
+}
+
+/* Box - Transition */
+.box{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    /*transition-property: background-color, border-radius;transition walata adala wana property eka*/
+    transition-property: all;
+    transition-duration: 1s;/*is for color change, 3s for radius changing*/
+    /* transition-delay: 1s; */
+    transition-timing-function: ease-in-out;
+}
+ 
+.box:hover{ /*Mouse move*/
+    background-color: coral;
+    border-radius: 30%;
+    transform: rotatateX(180deg) rotateY(180deg) rotateZ(180deg);
+    /* margin: auto auto auto 400px; */
+    opacity: 0.2;
+}
+
+/* 
+more properties...
+max-width
+max-height
+padding
+font-size
+font-weight
+color
+line-height
+border-width
+outline color
+top
+*/
+

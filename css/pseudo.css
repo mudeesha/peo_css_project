@@ -1,0 +1,96 @@
+/*psudo classes- Element state define karaganimata*/
+.lnk{
+    font-size: 25px;
+    background-color: white;
+}
+
+.lnk:hover{
+    background-color: black;
+}
+
+.lnk:active{
+    background-color: crimson;
+}
+
+.lnk:visited{
+    background-color: darkmagenta;
+}
+
+.chl p:first-child{
+    color: blue;
+}
+
+.chl p:last-child{
+    color: red;
+}
+
+.chl p:nth-child(5){
+    color:chartreuse
+}
+
+.chl p:nth-child(even){
+    color: blueviolet
+}
+
+input[type="text"]:focus{
+    background-color: green;
+}
+
+input[type="email"]:disabled{
+    background-color: black;
+}
+
+input[type="checkbox "]:checked + p{
+    background-color: brown;
+}
+
+/*psudo elements- element ekaka vishesha kotasak style karaganimatga*/
+.req::before{/*Name content ekata kalin*/
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: block;
+    background-color: red;
+}
+
+.req::after{/*Name content ekata passe*/
+    content: '';
+    height: 2px;
+    width: 500px;
+    display: block;
+    background-color: blue;
+}
+
+.frm button{
+    position:relative;
+}
+
+.frm button:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    right: 0;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.para::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+
+.para::first-line{
+    color: blue;
+    font-variant: small-caps;
+}
+
+h1::selection{
+    color: red;
+    background-color: yellow;
+}
+
+
+
+
